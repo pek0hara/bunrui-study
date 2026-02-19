@@ -2,8 +2,7 @@
   "name": "bunrui-study",
   "compatibility_date": "2026-01-13",
   "assets": {
-    "directory": "./bunrui_study/build/web",
-    "binding": "ASSETS"
+    "directory": "./bunrui_study/build/web"
   },
   "observability": {
     "enabled": true
