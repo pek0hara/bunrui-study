@@ -1,9 +1,8 @@
 # Flutter/Dart build artifacts
-kentei_app/.dart_tool/
-kentei_app/build/
-kentei_app/.flutter-plugins
-kentei_app/.flutter-plugins-dependencies
-kentei_app/.packages
+bunrui_study/.dart_tool/
+bunrui_study/.flutter-plugins
+bunrui_study/.flutter-plugins-dependencies
+bunrui_study/.packages
 
 # IDE
 .idea/
@@ -11,14 +10,14 @@ kentei_app/.packages
 .vscode/
 
 # Environment files (will be set in Vercel dashboard)
-kentei_app/.env
+bunrui_study/.env
 
 # Mobile/Desktop builds
-kentei_app/android/
-kentei_app/ios/
-kentei_app/linux/
-kentei_app/macos/
-kentei_app/windows/
+bunrui_study/android/
+bunrui_study/ios/
+bunrui_study/linux/
+bunrui_study/macos/
+bunrui_study/windows/
 
 # Test
-kentei_app/test/
+bunrui_study/test/

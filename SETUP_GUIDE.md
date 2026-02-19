@@ -17,7 +17,7 @@
 
 ### 1.2 新規プロジェクト作成
 1. 「New Project」をクリック
-2. プロジェクト名を入力（例: `kentei-app`）
+2. プロジェクト名を入力（例: `bunrui-study`）
 3. データベースパスワードを設定（強力なパスワードを推奨）
 4. リージョンを選択（日本なら`Northeast Asia (Tokyo)`が推奨）
 5. 「Create new project」をクリック
@@ -55,9 +55,9 @@
 ## ステップ4: Flutterアプリの設定
 
 ### 4.1 環境変数ファイルの作成
-1. ターミナルで`kentei_app`ディレクトリに移動：
+1. ターミナルで`bunrui_study`ディレクトリに移動：
    ```bash
-   cd kentei_app
+   cd bunrui_study
    ```
 
 2. `.env`ファイルを作成：
@@ -119,7 +119,7 @@ flutter run -d chrome
 ## トラブルシューティング
 
 ### エラー: "Failed to load .env"
-- `.env`ファイルが`kentei_app`ディレクトリに存在することを確認
+- `.env`ファイルが`bunrui_study`ディレクトリに存在することを確認
 - ファイル名が正確に`.env`であることを確認（`.env.txt`などではない）
 
 ### エラー: "Invalid Supabase credentials"

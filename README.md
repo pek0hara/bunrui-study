@@ -37,7 +37,7 @@ FlutterとSupabaseで構築された検定学習アプリケーションです�
 
 ### 4. Flutterアプリの設定
 
-1. `kentei_app`ディレクトリに`.env`ファイルを作成
+1. `bunrui_study`ディレクトリに`.env`ファイルを作成
 2. `.env.example`を参考に、以下の内容を記述：
 
 ```env
@@ -54,13 +54,13 @@ SUPABASE_ANON_KEY=your-anon-key-here
 
 #### モバイル（iOS/Android）
 ```bash
-cd kentei_app
+cd bunrui_study
 flutter run
 ```
 
 #### Web（管理画面用）
 ```bash
-cd kentei_app
+cd bunrui_study
 flutter run -d chrome
 ```
 
@@ -70,7 +70,7 @@ flutter run -d chrome
 kentei-study/
 ├── supabase_schema.sql          # データベーススキーマ
 ├── README.md                    # このファイル
-└── kentei_app/                  # Flutterアプリ
+└── bunrui_study/                  # Flutterアプリ
     ├── .env.example             # 環境変数のサンプル
     ├── .env                     # 環境変数（要作成、Gitには含まれない）
     ├── lib/

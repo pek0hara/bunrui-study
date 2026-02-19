@@ -1,12 +1,12 @@
 # Flutter/Dart build artifacts
-kentei_app/.dart_tool/
-kentei_app/build/
-kentei_app/.flutter-plugins
-kentei_app/.flutter-plugins-dependencies
-kentei_app/.packages
+bunrui_study/.dart_tool/
+bunrui_study/build/
+bunrui_study/.flutter-plugins
+bunrui_study/.flutter-plugins-dependencies
+bunrui_study/.packages
 
 # Environment files
-kentei_app/.env
+bunrui_study/.env
 
 # IDE
 .idea/

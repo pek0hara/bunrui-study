@@ -1,5 +1,5 @@
 {
-  "outputDirectory": "kentei_app/build/web",
+  "outputDirectory": "bunrui_study/build/web",
   "rewrites": [
     {
       "source": "/(.*)",

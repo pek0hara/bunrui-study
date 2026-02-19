@@ -1,0 +1,9 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(vercel inspect:*)",
+      "Bash(flutter build:*)",
+      "Bash(vercel:*)"
+    ]
+  }
+}
