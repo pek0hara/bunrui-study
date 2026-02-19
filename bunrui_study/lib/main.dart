@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:go_router/go_router.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'screens/home_screen.dart';
@@ -20,15 +19,12 @@ void main() async {
 
   await dotenv.load(fileName: '.env');
 
-  await Supabase.initialize(
-    url: dotenv.env['SUPABASE_URL']!,
-    anonKey: dotenv.env['SUPABASE_ANON_KEY']!,
-  );
-
   // Sync questions from asset to database on app startup
   try {
-    final supabaseService = SupabaseService(Supabase.instance.client);
-    final syncService = QuestionSyncService(supabaseService);
+    final apiService = ApiService(
+      dotenv.env['WORKER_API_URL'] ?? 'https://bunrui-study.workers.dev',
+    );
+    final syncService = QuestionSyncService(apiService);
     final count = await syncService.syncQuestionsToDatabase(
       kenteiId: biologyKenteiId,
       assetPath: 'assets/questions/biology_grade3.json',

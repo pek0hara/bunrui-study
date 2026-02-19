@@ -1,10 +1,19 @@
 {
   "name": "bunrui-study",
+  "main": "src/index.ts",
   "compatibility_date": "2026-01-13",
   "assets": {
-    "directory": "./bunrui_study/build/web"
+    "directory": "./bunrui_study/build/web",
+    "binding": "ASSETS"
   },
   "observability": {
     "enabled": true
-  }
+  },
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "bunrui-study-db",
+      "database_id": "0eec0c6d-d539-4648-99af-fbc0cd7d73d4"
+    }
+  ]
 }

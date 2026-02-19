@@ -1,16 +1,46 @@
-# Flutter/Dart build artifacts
+# ============================================================
+# Node.js / Cloudflare Workers
+# ============================================================
+node_modules/
+.wrangler/
+package-lock.json
+
+# ============================================================
+# Flutter / Dart ビルド成果物
+# ============================================================
 bunrui_study/.dart_tool/
 bunrui_study/build/
-!bunrui_study/build/web
 bunrui_study/.flutter-plugins
 bunrui_study/.flutter-plugins-dependencies
 bunrui_study/.packages
 
-# Environment files
-bunrui_study/.env
+# Flutter 自動生成ファイル
+bunrui_study/linux/flutter/generated_plugin_registrant.cc
+bunrui_study/linux/flutter/generated_plugin_registrant.h
+bunrui_study/linux/flutter/generated_plugins.cmake
+bunrui_study/macos/Flutter/GeneratedPluginRegistrant.swift
+bunrui_study/windows/flutter/generated_plugin_registrant.cc
+bunrui_study/windows/flutter/generated_plugin_registrant.h
+bunrui_study/windows/flutter/generated_plugins.cmake
 
-# IDE
+# Flutter ログ
+bunrui_study/*.log
+
+# ============================================================
+# 環境変数・シークレット
+# ============================================================
+bunrui_study/.env
+.env
+
+# ============================================================
+# IDE / ツール
+# ============================================================
 .idea/
 *.iml
 .vscode/
+.DS_Store
+
+# ============================================================
+# Vercel / Cloudflare デプロイ設定（ローカルのみ）
+# ============================================================
 .vercel

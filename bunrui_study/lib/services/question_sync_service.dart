@@ -4,9 +4,9 @@ import '../models/question.dart';
 import 'supabase_service.dart';
 
 class QuestionSyncService {
-  final SupabaseService _supabaseService;
+  final ApiService _apiService;
 
-  QuestionSyncService(this._supabaseService);
+  QuestionSyncService(this._apiService);
 
   /// Load questions from JSON asset file
   Future<List<Map<String, dynamic>>> loadQuestionsFromAsset(
@@ -36,7 +36,7 @@ class QuestionSyncService {
 
       // Get existing questions from database
       final existingQuestions =
-          await _supabaseService.getQuestionsByKenteiId(kenteiId);
+          await _apiService.getQuestionsByKenteiId(kenteiId);
 
       int importedCount = 0;
 
@@ -60,7 +60,7 @@ class QuestionSyncService {
             : QuestionType.multipleChoice;
 
         // Create question in database
-        await _supabaseService.createQuestion(
+        await _apiService.createQuestion(
           kenteiId: kenteiId,
           questionText: questionText,
           questionType: type,
@@ -89,7 +89,7 @@ class QuestionSyncService {
   }) async {
     try {
       final questions =
-          await _supabaseService.getQuestionsByKenteiId(kenteiId);
+          await _apiService.getQuestionsByKenteiId(kenteiId);
 
       final List<Map<String, dynamic>> jsonQuestions = questions.map((q) {
         final Map<String, dynamic> json = {

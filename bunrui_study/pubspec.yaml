@@ -38,8 +38,8 @@ dependencies:
   # State management
   flutter_riverpod: ^2.6.1
 
-  # Supabase
-  supabase_flutter: ^2.9.1
+  # HTTP client (D1 Worker API)
+  http: ^1.2.2
 
   # JSON serialization
   json_annotation: ^4.9.0
