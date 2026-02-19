@@ -9,7 +9,8 @@ package-lock.json
 # Flutter / Dart ビルド成果物
 # ============================================================
 bunrui_study/.dart_tool/
-bunrui_study/build/
+bunrui_study/build/*
+!bunrui_study/build/web
 bunrui_study/.flutter-plugins
 bunrui_study/.flutter-plugins-dependencies
 bunrui_study/.packages
